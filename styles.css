@@ -1,0 +1,102 @@
+body {
+    margin: 0; 
+}
+
+/* Header */
+header {
+    background-image: url(/images/header.svg);
+    background-size: cover;
+    height: 50rem;
+    
+}
+.nav-container {
+    height: 3rem;
+    box-shadow: 0 0 .5rem .01rem #3C4141;
+
+}
+.nav-menu {
+    width: 30%;
+}
+
+.header-text {
+    margin-top: 5rem;
+}
+
+/* Main */
+
+
+
+
+
+
+
+/* Reusable code*/
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.vertical {
+    flex-direction: column;
+}
+
+.centered {
+    justify-content: center;
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+/* Fonts */
+.signature {
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 5rem;
+    margin: 0 0 .5rem 0;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 7rem;
+    margin: 0;
+}
+
+.text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Colors */
+.grey {
+    color: #3C4141;
+}
+
+.blue {
+    color: #2477FF;
+}
+
+/* My standard */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #3C4141;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: white;
+}
