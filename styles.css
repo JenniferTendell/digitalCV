@@ -1,5 +1,6 @@
 body {
     margin: 0; 
+    box-sizing: border-box;
 }
 
 /* HEADER */
@@ -11,11 +12,13 @@ header {
 
 .nav-container {
     height: 3rem;
-    box-shadow: 0 0 .5rem .01rem #3C4141;
+    box-shadow: 0 0 .8rem .01rem #f06866a9;
+    background-image: url(./images/header.svg);
+    background-size: cover;
 }
 
 .nav-menu {
-    width: 30%;
+    width: 30rem;
 }
 
 .header-text {
@@ -24,13 +27,13 @@ header {
 
 /* MAIN */
 main {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
 /* About me */
 .about-me-grid {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr .5fr;
     column-gap: 7rem;
 }
 
@@ -45,7 +48,7 @@ main {
 }
 
 .profile-picture {
-    width: 20rem;
+    width: 16rem;
 }
 
 /* Portfolio */
@@ -53,11 +56,24 @@ main {
     grid-template-columns: repeat(4, minmax(13rem, 20rem));
     grid-template-rows: 15rem;
     column-gap: 1rem;
+    padding: 4rem 0;
 }
 
 .portfolio-img {
     width: 100%;
     height: auto;
+    border-radius: .3rem;
+}
+
+.horizontal-line {
+    background-color: #3C4141;
+    width: 20rem;
+    height: .1rem;
+    margin: 0 auto;
+}
+
+.github-container {
+    padding-top: 3rem;
 }
 
 /* FOOTER */
@@ -131,7 +147,7 @@ footer {
     font-family: 'Bilbo Swash Caps', cursive;
     font-weight: 500;
     font-size: 3rem;
-    margin: 0 0 .5rem 0;
+    margin: 0 0 .3rem 0;
 }
 
 .title {
@@ -144,7 +160,7 @@ footer {
 .text {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0;
 }
 
@@ -161,15 +177,23 @@ footer {
     color: #3C4141;
 }
 
-.blue {
-    color: #2477FF;
+.pink {
+    color: #F06966;
+}
+
+/* Icon-size */
+.small-icon {
+    font-size: 1.3rem;
+}
+
+.large-icon {
+    font-size: 2.5rem;
 }
 
 /* Make standard */
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0 1rem;
+    padding: 0;
 }
 
 a {
@@ -178,6 +202,7 @@ a {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 1rem;
+    padding: 0 1rem;
 }
 
 a:hover {
@@ -189,6 +214,3 @@ a:hover {
     padding-bottom: 10rem;
 }
 
-.icon-size {
-    font-size: 1.3rem;
-}
