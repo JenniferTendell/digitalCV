@@ -18,13 +18,13 @@
             <nav class="nav-menu flex">
                 <ul class="flex flex-1 space-between">
                     <li>
-                        <a href="#">About me</a>
+                        <a href="#about-me">About me</a>
                     </li>
                     <li>
-                        <a href="#">Portfolio</a>
+                        <a href="#portfolio">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -36,7 +36,7 @@
     </header>
     <main>
         <!-- About Me -->
-        <div class="about-me-grid vertical-whitespace grid">
+        <div id="about-me" class="about-me-grid vertical-whitespace grid">
             <div class="flex center vertical">
                 <p class="grey title">About me</p>
                 <p class="about-me-text grey text"> I’ve always had an interest for colors, shapes and creating things through my creative mind. 
@@ -60,7 +60,7 @@
             </div>
         </div>
         <!-- Portfolio -->
-        <div class="vertical-whitespace">
+        <div id="portfolio" class="vertical-whitespace">
             <p class="flex center grey title">Portfolio</p>
             <div class="portfolio-grid grid">
                 <img class="portfolio-img" src="./images/Planet.png" alt="Planet">
@@ -70,16 +70,18 @@
             </div>
             <div class="horizontal-line"></div>
             <div class="flex center text-center">
-                <div class="github-container">
+                <div class="github-container flex center">
+                    <a href="https://github.com/JenniferTendell" target="_blank">
                     <i class="grey large-icon fab fa-github"></i>
                     <p class="grey text">Github</p>
+                    </a>
                 </div> 
             </div> 
         </div>
     </main>
     <footer>
         <!-- Footer -->
-        <p class="flex center grey title">Contact me</p>
+        <p id="contact" class="flex center grey title">Contact me</p>
         <div class="footer-grid center grid">
             <!-- Signature and website -->
             <div class="flex flex-end vertical">
