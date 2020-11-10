@@ -1,9 +1,18 @@
+/* Starts functions */
 window.addEventListener('load', main);
+
+/* Global variables */
 let previousPosition = 0;
 
+/* Holds all functions */
 function main() {
+    eventListeners();
+}
+
+/* Holds all event listeners */
+function eventListeners() {
     window.addEventListener('scroll', toggleMenu);
-    moveHeaderImages();
+    window.addEventListener('scroll', parallaxScrollingHeader);
 }
 
 /* Show menu on scroll up, hide on scroll down */
@@ -19,17 +28,16 @@ function toggleMenu() {
     previousPosition = window.scrollY;
 }
 
-/* Move header images on scroll */
-function moveHeaderImages() {
+/* Moves header images on scroll, parallax scrolling */
+function parallaxScrollingHeader() {
     const headerMountains = document.getElementById('header-layer-2');
     const headerGothenburg = document.getElementById('header-layer-3');
 
-    window.addEventListener('scroll', function() {
-        let value = window.scrollY;
+    let value = window.scrollY;
 
-        headerMountains.style.top = value * .05 + 'rem';
-        headerGothenburg.style.top = value * .02 + 'rem';      
-    })  
+    headerMountains.style.top = value * .05 + 'rem';
+    headerGothenburg.style.top = value * .02 + 'rem'; 
 }
+
 
 
