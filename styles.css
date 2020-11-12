@@ -66,6 +66,7 @@ main {
     height: 2.5rem;
     border-radius: .3rem;
     border-style: none;
+    outline: none;
     background-color: #f06866;
     box-shadow: 0 .1rem .3rem .1rem #3c414156;
     transition: 300ms ease;
