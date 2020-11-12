@@ -10,19 +10,17 @@ body {
 /* HEADER */
 header {
     position: relative;
-    height: 50rem;
-    width: 100%;
-    background-image: url(/images/header.svg);
-    background-size: cover; 
+    height: 100vh;
+    width: 100%; 
     overflow: hidden;    
 }
 
 header img {
     position: absolute;
-    top: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    top: 0;
 }
 
 .nav-container {
@@ -33,6 +31,7 @@ header img {
     box-shadow: 0 0 .5rem #3c414156;
     background-image: url(./images/header.svg);
     background-size: cover;
+    z-index: 100;
 
     transition: top 0.4s;
 }
@@ -42,8 +41,10 @@ header img {
 }
 
 .header-text {
+    position: relative;
     padding-top: 10rem;
     padding-left: 25rem;
+    z-index: 1;
 }
 
 /* MAIN */
@@ -52,7 +53,7 @@ main {
 }
 /* About me */
 .about-me-container {
-    width: 50%;
+    width: 50rem;
 }
 
 .about-me-text {
@@ -61,7 +62,8 @@ main {
     padding-bottom: 5rem;
 }
 
-.cv-button {
+.resume-button {
+    cursor: pointer;
     width: 15rem;
     height: 2.5rem;
     border-radius: .3rem;
@@ -72,7 +74,7 @@ main {
     transition: 300ms ease;
 }
 
-.cv-button:hover {
+.resume-button:hover {
     width: 17rem;
 }
 
@@ -135,6 +137,10 @@ footer {
     padding-bottom: 5rem;
 }
 
+.footer-signature-container {
+    align-items: flex-end;
+}
+
 .vertical-line {
     background-color: #3C4141;
     width: .1rem;
@@ -146,7 +152,6 @@ footer {
     grid-template-columns: .1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     gap: .5rem;
-
 }
 
 
@@ -178,11 +183,14 @@ footer {
     justify-content: space-between;
 }
 
-.flex-end {
-    align-items: flex-end;
+/* Text */
+.header-signature {
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-weight: 500;
+    font-size: 5rem;
+    margin: 0 0 .3rem 0;
 }
 
-/* Text */
 .signature {
     font-family: 'Bilbo Swash Caps', cursive;
     font-weight: 500;
@@ -202,10 +210,6 @@ footer {
     font-weight: 300;
     font-size: 1.2rem;
     margin: 0;
-}
-
-.large-text {
-    font-size: 5rem;
 }
 
 .text-center {
@@ -252,6 +256,6 @@ a:hover {
 
 .vertical-whitespace {
     padding-top: 6rem;
-    padding-bottom: 10rem;
+    padding-bottom: 8rem;
 }
 

@@ -6,6 +6,7 @@
     <title>DigitalCV</title>
 
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./mediaqueries.css">
     <script defer src="./main.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap" rel="stylesheet">
@@ -13,7 +14,8 @@
 </head>
 <body>
     <header>
-        <div class="header-images">
+        <div>
+            <img src="./images/header.svg" alt="Pink background">
             <img id="header-layer-2" src="./images/header-layer2.svg" alt="Mountains">
             <img id="header-layer-3" src="./images/header-layer3.svg" alt="Gothenburg">
             <!-- Menu -->
@@ -33,7 +35,7 @@
                 </nav>
             </div>
             <div class="header-text flex center vertical">
-                <h1 class="large-text grey signature">Jennifer Tendell</h1>
+                <h1 class="grey header-signature">Jennifer Tendell</h1>
                 <p class="grey text"><b>Front End Developer</b> & Digital Designer</p>
             </div>
         </div>
@@ -60,7 +62,7 @@
                 </p>
             </div> 
             <a href="./cv-mall.pdf" target="_blank">
-                <button class="cv-button white text"> CV </button> 
+                <button class="resume-button white text"> Resume </button> 
             </a> 
         </div>
         <!-- Portfolio -->
@@ -88,7 +90,7 @@
         <p id="contact" class="flex center grey title">Contact me</p>
         <div class="footer-grid center grid">
             <!-- Signature and website -->
-            <div class="flex flex-end vertical">
+            <div class="footer-signature-container flex vertical">
                 <div class="flex center vertical">
                     <p class="grey signature">Jennifer Tendell</p>
                     <p class="grey text"><b>www.</b>jennifertendell.se</p>
@@ -109,7 +111,6 @@
                 </div>
             </div>
         </div>
-    </footer>
-    
+    </footer>  
 </body>
 </html>

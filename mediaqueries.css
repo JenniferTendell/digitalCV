@@ -1,0 +1,93 @@
+/* LANDSCAPE TABLETS */
+@media (max-width: 992px) {
+    /* HEADER */
+    #header-layer-3 {
+        /* Object fit - Få hela illustrationen att synas utan glapp i botten */
+    }
+
+    .header-text {
+        padding-left: 0;
+    }
+
+    /* MAIN */
+    .about-me-container {
+        width: 90%;
+    }
+}
+
+/* PORTRAIT TABLETS AND LARGE PHONES */
+@media (max-width: 768px) {
+    /* HEADER */
+    .nav-menu {
+        width: 25rem;
+    }
+    
+    /* FOOTER */
+    .footer-grid {
+        grid-template-columns: 1fr; 
+        gap: 2rem; 
+        max-width: 16rem;      
+    }
+
+    .footer-signature-container {
+        align-items: center;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    /* Text */
+    .title {
+        font-size: 4rem;
+    }
+
+    .signature {
+        font-size: 2rem;
+    }
+}
+
+/* MOBILES */
+@media (max-width: 450px) {
+    /* HEADER */
+    .nav-menu {
+        width: 90%;
+    }
+
+    a {
+        font-size: .9rem;
+    }
+
+    /* MAIN */
+    main {
+        padding: 0 1rem;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+
+    .horizontal-line {
+        width: 12rem;
+    }
+
+    /* Text */
+    .header-signature {
+        font-size: 3rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+}
