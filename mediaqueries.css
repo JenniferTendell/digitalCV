@@ -62,12 +62,16 @@
     }
 
     a {
-        font-size: .9rem;
+        font-size: .8rem;
     }
 
     /* MAIN */
     main {
         padding: 0 1rem;
+    }
+
+    .profile-img {
+        width: 15rem;
     }
 
     .portfolio-grid {
