@@ -16,7 +16,7 @@ function main() {
 }
 
 /**
- * Holds alla event listeners
+ * Holds all event listeners
  */
 function eventListeners() {
     window.addEventListener('scroll', toggleMenu);
