@@ -1,21 +1,31 @@
-/* Starts functions */
+/**
+ * Start
+ */
 window.addEventListener('load', main);
 
-/* Global variables */
+/**
+ * Position for scroll-Y
+ */
 let previousPosition = 0;
 
-/* Holds all functions */
+/**
+ * Hold all functions
+ */
 function main() {
     eventListeners();
 }
 
-/* Holds all event listeners */
+/**
+ * Holds alla event listeners
+ */
 function eventListeners() {
     window.addEventListener('scroll', toggleMenu);
     window.addEventListener('scroll', parallaxScrollingHeader);
 }
 
-/* Show menu on scroll up, hide on scroll down */
+/**
+ * Show menu on scroll up, hide on scroll down
+ */
 function toggleMenu() {
     const menu = document.getElementById('menu');
 
@@ -28,7 +38,9 @@ function toggleMenu() {
     previousPosition = window.scrollY;
 }
 
-/* Moves header images on scroll, parallax scrolling */
+/**
+ * Moves header images on scroll, parallax scrolling
+ */
 function parallaxScrollingHeader() {
     const headerMountains = document.getElementById('header-layer-2');
     const headerGothenburg = document.getElementById('header-layer-3');
