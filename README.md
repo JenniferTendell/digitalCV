@@ -1,5 +1,3 @@
-# My Portfolio
-
-## This is my Portfolio. Updates about me and my portfolio coming soon. 
+# My Portfolio 
 
 ### Go to [portfolio](https://jennifertendell.github.io/digitalCV/).
