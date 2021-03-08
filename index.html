@@ -36,7 +36,7 @@
             </div>
             <div class="header-text flex center vertical">
                 <h1 class="grey header-signature">Jennifer Tendell</h1>
-                <p class="grey text"><b>Front End Developer</b> & Digital Designer</p>
+                <p class="grey"><b>Front End Developer</b> & Digital Designer</p>
             </div>
         </div>
     </header>
@@ -47,8 +47,8 @@
                 <div class="profile-img-container flex center">
                     <img class="profile-img" src="images/profileImage.svg" alt="Profile picture">
                 </div>
-                <p class="grey title">About me</p>
-                <p class="about-me-text grey text"> I’ve always had an interest for colors, shapes and creating things through my creative mind. 
+                <p class="grey large-title">Hi, I'm Jennifer!</p>
+                <p class="about-me-text grey"> I’ve always had an interest for colors, shapes and creating things through my creative mind. 
                     As a little girl I used to make my own jewelry, nail art and paintings. Later on, I became 
                     more digital and continued my work in photoshop and illustrator. I love the process of 
                     putting things together to see how it can become something new. I’m a curious, calm and 
@@ -63,25 +63,70 @@
                     To be continued...
                 </p>
             </div> 
-            <a href="./cv-2020.pdf" target="_blank">
-                <button class="resume-button white text"> Resume </button> 
+            <a href="./CV - Jennifer Tendell.pdf" target="_blank">
+                <button class="primary-button white"> Resume </button> 
             </a> 
         </div>
         <!-- Portfolio -->
         <div id="portfolio" class="flex center vertical vertical-whitespace">
-            <p class="flex center grey title">Portfolio</p>
+            <p class="flex center grey large-title">Portfolio</p>
             <div class="portfolio-grid grid">
-                <img class="portfolio-img" src="./images/Planet.png" alt="Planet">
-                <img class="portfolio-img" src="./images/gothenburg.svg" alt="Gothenburg">
-                <img class="portfolio-img" src="./images/Planet.png" alt="Planet">
-                <img class="portfolio-img" src="./images/gothenburg.svg" alt="Gothenburg">    
+                <!-- RapiDapi -->
+                <div class="project-frame flex center space-between vertical">
+                    <img class="portfolio-img" src="./images/RapiDapi.png" alt="RapiDapi - Cocktails">
+                    <div class="project-text flex center vertical">
+                        <p class="small-title">RapiDapi - Cocktails</p>
+                        <p class="text-justify">This is my first project with react. We decided to create a website where you can search for cocktails by name or ingredient.</p>
+                        <ul class="project-list">
+                            <li>React</li>
+                            <li>HTML, CSS, TypeScript</li>
+                            <li>API</li>
+                            <li>User interface design(UI)</li>
+                        </ul>
+                        <button class="disabled-button white"> Coming soon... </button>
+                    </div>
+                </div>  
+                <!-- RainbowMan --> 
+                <div class="project-frame flex center space-between vertical">
+                    <img class="portfolio-img" src="./images/RainbowMan.png" alt="RainbowMan">
+                    <div class="project-text flex center vertical">
+                        <p class="small-title">RainbowMan - Game</p>
+                        <p class="text-justify">This is my first project with object-oriented programming(OOP). Unfortunately it only works on desktop since you need arrow keys.</p>
+                        <ul class="project-list">
+                            <li>Object-oriented programming(OOP)</li>
+                            <li>HTML, CSS, TypeScript</li>
+                            <li>p5.js</li>
+                            <li>Class diagram</li>
+                        </ul>
+                        <a href="https://rainbowman.netlify.app/" target="_blank">
+                            <button class="primary-button white"> RainbowMan </button> 
+                        </a>
+                    </div>
+                </div> 
+                <!-- Guess my number -->  
+                <div class="project-frame flex center space-between vertical">
+                    <img class="portfolio-img" src="./images/Quiz.png" alt="Guess my number">
+                    <div class="project-text flex center vertical">
+                        <p class="small-title">Guess my number</p>
+                        <p class="text-justify">We used this project to practice scrum. The task was to develop a guessing game where the user could compete against simple bots.</p>
+                        <ul class="project-list">
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>User interface Design(UI)</li>
+                            <li>Graphic design</li>
+                            <li>Agile</li>
+                        </ul>
+                        <a href="https://antonmaenpaa.github.io/quiz-app/login.html" target="_blank">
+                            <button class="primary-button white"> Guess my number </button> 
+                        </a>
+                    </div>
+                </div>      
             </div>
             <div class="horizontal-line"></div>
             <div class="flex center text-center">
                 <div class="github-container flex center">
                     <a href="https://github.com/JenniferTendell" target="_blank">
                     <i class="grey large-icon fab fa-github"></i>
-                    <p class="grey text">Github</p>
+                    <p class="grey">Github</p>
                     </a>
                 </div> 
             </div> 
@@ -89,13 +134,13 @@
     </main>
     <footer>
         <!-- Footer -->
-        <p id="contact" class="flex center grey title">Contact me</p>
+        <p id="contact" class="flex center grey large-title">Contact me</p>
         <div class="footer-grid center grid">
             <!-- Signature and website -->
             <div class="footer-signature-container flex vertical">
                 <div class="flex center vertical">
                     <p class="grey signature">Jennifer Tendell</p>
-                    <p class="grey text"><b>www.</b>jennifertendell.se</p>
+                    <p class="grey text-center"><b>Front End Developer</b> & Digital Designer</p>
                 </div>
             </div>
             <div class="vertical-line"></div>
@@ -103,13 +148,13 @@
             <div class="flex vertical">
                 <div class="contact-grid center grid">
                     <i class="grey small-icon fas fa-phone-alt"></i>
-                    <p class="grey text">0761 84 06 09</p>
+                    <p class="grey">0761 84 06 09</p>
                     
                     <i class="grey small-icon fas fa-envelope"></i>
-                    <p class="grey text">jennifertendell@gmail.com</p>
+                    <p class="grey">jennifertendell@gmail.com</p>
                     
                     <i class="grey small-icon fab fa-linkedin"></i>
-                    <p class="grey text">/jennifertendell</p>
+                    <p class="grey">/jennifertendell</p>
                 </div>
             </div>
         </div>

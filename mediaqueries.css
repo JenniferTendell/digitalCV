@@ -1,5 +1,5 @@
 /* LANDSCAPE TABLETS */
-@media (max-width: 992px) {
+@media (max-width: 1140px) {
     /* HEADER */
     .header-text {
         padding-left: 0;
@@ -8,6 +8,16 @@
     /* MAIN */
     .about-me-container {
         width: 90%;
+    }
+
+    /* Portfolio */
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 30rem));
+    }
+
+    /* Text */
+    .large-title {
+        font-size: 5rem;
     }
 }
 
@@ -22,7 +32,7 @@
     .footer-grid {
         grid-template-columns: 1fr; 
         gap: 2rem; 
-        max-width: 16rem;      
+             
     }
 
     .footer-signature-container {
@@ -41,8 +51,8 @@
     }
 
     /* Text */
-    .title {
-        font-size: 4rem;
+    .large-title {
+        font-size: 3.5rem;
     }
 
     .signature {
@@ -78,16 +88,46 @@
         width: 12rem;
     }
 
+    .vertical-whitespace {
+        padding: 2rem 0;
+    }
+
     /* Text */
     .header-signature {
         font-size: 3rem;
     }
 
-    .title {
-        font-size: 3rem;
+    .large-title {
+        font-size: 2rem;
     }
 
-    .text {
+    .small-title {
+        font-size: 1.5rem;
+    }
+
+    .about-me-text {
+        padding-bottom: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .project-list {
+        padding: 1rem 0 1rem 2rem;
+        font-size: .9rem;
+    }
+
+    /* Buttons */
+    .primary-button {
+        width: 10rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+
+    .disabled-button {
+        width: 10rem;
+        height: 2rem;
         font-size: 1rem;
     }
 }

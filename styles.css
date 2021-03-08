@@ -62,22 +62,6 @@ main {
     padding-bottom: 5rem;
 }
 
-.resume-button {
-    cursor: pointer;
-    width: 13rem;
-    height: 2.5rem;
-    border-radius: .3rem;
-    border-style: none;
-    outline: none;
-    background-color: #f06866;
-    box-shadow: 0 .1rem .3rem .1rem #3c414156;
-    transition: 300ms ease;
-}
-
-.resume-button:hover {
-    width: 15rem;
-}
-
 /* Profile image */
 .profile-img-container {
     padding-bottom: 2rem;
@@ -89,16 +73,35 @@ main {
 
 /* Portfolio */
 .portfolio-grid {
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-template-rows: auto;
-    gap: 1rem;
+    gap: 4rem;
     padding: 4rem 0;
+    margin-bottom: 2rem;
 }
 
 .portfolio-img {
     width: 100%;
     object-fit: cover;
+}
+
+.project-frame {
+    border: .5rem double #3C4141;
+    padding-bottom: 2rem;
     border-radius: .3rem;
+}
+
+.project-text {
+    border-top: .3rem solid #3C4141;
+    margin: 0 2rem;
+}
+
+.project-list {
+    list-style-type: circle;
+    padding: 2rem 0 2rem 4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
 }
 
 .horizontal-line {
@@ -113,7 +116,7 @@ main {
 }
 
 .github-container:hover i{
-    transition: 300ms ease;
+    transition: 300ms ease-in-out;
     color: #f06966;
 }
 
@@ -193,22 +196,47 @@ footer {
     margin: 0 0 .3rem 0;
 }
 
-.title {
+.large-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 6rem;
     margin: 0;
 }
 
-.text {
+.small-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+p {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 1.2rem;
     margin: 0;
 }
 
+.link-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    transition: .3s ease-in-out;
+}
+
+.link-text:hover {
+    color: #f06966;
+    cursor: pointer;
+}
+
 .text-center {
     text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
 }
 
 /* Colors for text */
@@ -227,6 +255,39 @@ footer {
 
 .large-icon {
     font-size: 2.5rem;
+}
+
+/* Buttons */
+.primary-button {
+    cursor: pointer;
+    width: 13rem;
+    height: 2.5rem;
+    border-radius: .3rem;
+    border-style: none;
+    outline: none;
+    background-color: #F5A086;
+    box-shadow: .1rem .1rem #3c414156;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    transition: 300ms ease-in-out;
+}
+
+.primary-button:hover {
+    width: 15rem;
+}
+
+.disabled-button {
+    width: 13rem;
+    height: 2.5rem;
+    border-radius: .3rem;
+    border-style: none;
+    outline: none;
+    background-color: #3C4141;
+    box-shadow: .1rem .1rem #3c414156;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
 }
 
 /* Make standard */
